@@ -1,6 +1,6 @@
 import CafeInfo from '../CafeInfo/CafeInfo';
 import css from './App.module.css';
-import type { Vote, VoteType } from '../../types/votes_temp';
+import type { Vote, VoteType } from '../../types/votes';
 import { useState } from 'react';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
