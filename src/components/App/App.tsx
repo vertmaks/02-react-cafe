@@ -1,6 +1,6 @@
 import CafeInfo from '../CafeInfo/CafeInfo';
 import css from './App.module.css';
-import type { Vote, VoteType } from '../../types/votes';
+import type { Votes, VoteType } from '../../types/votes';
 import { useState } from 'react';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
@@ -13,7 +13,7 @@ const VoteOptionsObj = {
 };
 
 export default function App() {
-  const [votes, setVotes] = useState<Vote>(VoteOptionsObj);
+  const [votes, setVotes] = useState<Votes>(VoteOptionsObj);
 
   const handleVote = (type: VoteType) => {
     setVotes({ ...votes, [type]: votes[type] + 1 });
